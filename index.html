@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="author" content="Michelle Guo">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Michelle Guo professional website">
-    <title>Michelle Guo</title>
-    <link rel="stylesheet" href="statics/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./statics/script.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle Guo — Information Systems @ Carnegie Mellon</title>
+  <meta name="author" content="Michelle Guo">
+  <meta name="keywords" content="Michelle Guo, Carnegie Mellon University, Information Systems, Data Science, Machine Learning, Architecture, Photography">
+  <meta name="description" content="Michelle Guo — CMU Information Systems student working in machine learning, causal inference, and AI product development. Architecture and photography portfolios.">
+  <link rel="stylesheet" href="statics/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="statics/script.js" defer></script>
 </head>
-<body onload="addYear()">
-    <header>
-        <h1 id ="webname"> Michelle Guo</h1>
-        <nav>
-            <a href="index.html" class="navlink">Home</a>
-            <a href="views/cv.html" class="navlink">CV</a>
-            <a href="views/contact.html" class="navlink">Contact Me</a>
-            <a href="views/fun.html" class="navlink">Fun</a>
-            <a href="templates.html">Responsive Template</a>
-          </nav>    
-    </header>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">Michelle Guo</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="views/work.html">Work</a></li>
+        <li><a href="views/architecture.html">Architecture</a></li>
+        <li><a href="views/photography.html">Photography</a></li>
+        <li><a href="views/cv.html">CV</a></li>
+        <li><a href="views/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-              
-    <div class="main">
-        <h2 id="greetingH2"></h2>
-        <img src = "statics/IMG_3611.JPG" alt="Photo of me" style = "max-width: 200px;"> 
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Carnegie Mellon University</p>
+      <h1>Hi, I'm Michelle.</h1>
+      <p class="tagline">
+        Information Systems student working across machine learning, causal
+        inference, data engineering, and AI product development — with a creative
+        practice in architecture and photography.
+      </p>
+      <div class="btn-group">
+        <a href="views/work.html" class="btn btn-primary">View my work</a>
+        <a href="views/contact.html" class="btn btn-secondary">Get in touch</a>
+      </div>
     </div>
-    <div id="bio">
-        <p id="shortBio">I am an Information Systems student at CMU... <button id="readMoreBtn">Read More</button></p>
-        <p id="fullBio" style="display: none;">
-            I am an Information Systems major sophomore undergraduate at Carnegie Mellon University. 
-            I have an interest in technology, AI, and data science. 
-            <button id="readLessBtn">Read Less</button>
+    <div class="hero-image">
+      <img src="statics/IMG_3611.JPG" alt="Portrait of Michelle Guo">
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-grid">
+      <div>
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-title">A short intro.</h2>
+      </div>
+      <div class="bio">
+        <p>
+          I'm pursuing an accelerated M.S. in Information Systems Management and
+          a B.S. in Information Systems at Carnegie Mellon University, with a
+          minor in Artificial Intelligence and Architecture.
         </p>
+        <p>
+          My work spans machine learning, causal inference, data engineering, and
+          AI product development — most recently building data infrastructure and
+          ESG analytics for an intelligence agent, and researching wildfire risk
+          and public safety power shutoff (PSPS) effects at CMU.
+        </p>
+        <p>
+          Outside of technical work, I explore design and visual storytelling
+          through architecture and photography. I'm a Canadian citizen currently
+          studying in the U.S. on F-1 status and open to relocation.
+        </p>
+      </div>
     </div>
-    
-    <footer>
-        <p id="copyYear"></p>
-        <p>Michelle Guo</p>
-    </footer>
-      
+  </section>
+
+  <section class="container">
+    <p class="section-eyebrow">Explore</p>
+    <h2 class="section-title">What you'll find here.</h2>
+    <div class="highlights">
+      <a href="views/work.html" class="highlight-card">
+        <h3>Work &amp; Projects</h3>
+        <p>Data science, ML research, and industry projects.</p>
+        <span class="arrow">View work &rarr;</span>
+      </a>
+      <a href="views/architecture.html" class="highlight-card">
+        <h3>Architecture</h3>
+        <p>A portfolio of studio work and design explorations.</p>
+        <span class="arrow">View portfolio &rarr;</span>
+      </a>
+      <a href="views/photography.html" class="highlight-card">
+        <h3>Photography</h3>
+        <p>Selected images from travel and everyday life.</p>
+        <span class="arrow">View portfolio &rarr;</span>
+      </a>
+      <a href="views/cv.html" class="highlight-card">
+        <h3>Curriculum Vitae</h3>
+        <p>Education, experience, skills, and awards.</p>
+        <span class="arrow">View CV &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="mailto:michelle2004.guo@gmail.com">Email</a>
+      <a href="views/cv.html">CV</a>
+      <a href="views/contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="copyYear"></span> Michelle Guo. All rights reserved.</p>
+  </footer>
 </body>
 </html>

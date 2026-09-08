@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work &amp; Projects — Michelle Guo</title>
+  <meta name="author" content="Michelle Guo">
+  <meta name="description" content="Selected work and projects by Michelle Guo — data science, causal inference research, machine learning, and industry briefs.">
+  <link rel="stylesheet" href="../statics/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="../statics/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand">Michelle Guo</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="section-eyebrow">Portfolio</p>
+    <h1 class="section-title">Work &amp; Projects</h1>
+    <p class="section-subtitle">
+      A selection of professional experience, research, and technical projects.
+      Deeper case studies and write-ups are on the way.
+    </p>
+
+    <h2 class="subsection-title">Experience</h2>
+
+    <article class="work-item">
+      <div class="work-header">
+        <div>
+          <div class="work-role">Data Scientist, Product Development Team</div>
+          <div class="work-org">Summer Atlantic Capital LLC — Remote, New York</div>
+        </div>
+        <div class="work-date">May 2026 – Present</div>
+      </div>
+      <div class="work-desc">
+        <p><em>Project focus: SAC Nexus SustainAI ESG &amp; Impact Intelligence Agent</em></p>
+        <ul>
+          <li>Engineered core data infrastructure for SustainAI, developing ingestion pipelines, PostgreSQL schemas, and rule-based/fuzzy entity resolution to standardize ESG disclosures, regulatory filings, and other unstructured data with confidence scoring and source provenance.</li>
+          <li>Developed deterministic ESG, impact, and regulatory analytics, including emissions/portfolio aggregation, SDG alignment, and classification logic, with human-in-the-loop review and auditable override APIs.</li>
+        </ul>
+      </div>
+      <div class="work-tags">
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">ESG Analytics</span>
+        <span class="tag">Data Engineering</span>
+      </div>
+      <p class="coming-soon">Deeper case study coming soon</p>
+    </article>
+
+    <article class="work-item">
+      <div class="work-header">
+        <div>
+          <div class="work-role">Causal Inference Research on PSPS Impact</div>
+          <div class="work-org">Carnegie Mellon University — Pittsburgh, PA</div>
+        </div>
+        <div class="work-date">Summer 2025 – Spring 2026</div>
+      </div>
+      <div class="work-desc">
+        <ul>
+          <li>Built a Python causal-inference pipeline (pandas, statsmodels) using inverse probability weighting and marginal structural models to estimate PSPS effects on wildfire ignition risk, integrating CalFire ignitions, CPUC outages, and NOAA HRRR weather data.</li>
+          <li>Estimated <strong>64.4% lower ignition risk during PSPS events</strong> and identified substantial treatment-effect heterogeneity, motivating counterfactual risk maps to reveal conditions where PSPS effectiveness diverged from expectations.</li>
+          <li>Earned a <em>Travel Award</em> at the 20th INFORMS DMDA Workshop, <strong>1st Place</strong> in the OR/MS Poster Competition, and runner-up for the Environmental Undergraduate Research Award.</li>
+        </ul>
+      </div>
+      <div class="work-tags">
+        <span class="tag">Causal Inference</span>
+        <span class="tag">Python</span>
+        <span class="tag">statsmodels</span>
+        <span class="tag">Wildfire Research</span>
+      </div>
+      <p class="coming-soon">Deeper case study coming soon</p>
+    </article>
+
+    <article class="work-item">
+      <div class="work-header">
+        <div>
+          <div class="work-role">Undergraduate Research Fellowship</div>
+          <div class="work-org">Carnegie Mellon University — Pittsburgh, PA</div>
+        </div>
+        <div class="work-date">Mar 2025 – Nov 2025</div>
+      </div>
+      <div class="work-desc">
+        <ul>
+          <li>Developed wildfire-risk models using <strong>GLMs, PyTorch MLPs, and Hawkes processes</strong>, engineering lagged environmental and human-activity features to generate grid-level predictive risk surfaces for California.</li>
+          <li>Built a Python data pipeline (xarray, pandas) processing <strong>5 years of hourly weather data across 824 3-km grid cells and 444K+ observations</strong>, integrating wind, temperature, humidity, fuel, and geospatial data for modeling.</li>
+        </ul>
+      </div>
+      <div class="work-tags">
+        <span class="tag">PyTorch</span>
+        <span class="tag">xarray</span>
+        <span class="tag">Geospatial</span>
+        <span class="tag">Hawkes Processes</span>
+      </div>
+      <p class="coming-soon">Deeper case study coming soon</p>
+    </article>
+
+    <h2 class="subsection-title">Projects</h2>
+
+    <article class="work-item">
+      <div class="work-header">
+        <div>
+          <div class="work-role">Machine Learning Projects</div>
+          <div class="work-org">Carnegie Mellon University — Pittsburgh, PA</div>
+        </div>
+        <div class="work-date">Fall 2025</div>
+      </div>
+      <div class="work-desc">
+        <ul>
+          <li>Trained neural network models (MLP, CNN, and RNN-style sequence models) in PyTorch, tuning optimization hyperparameters and evaluating generalization performance. Implemented core supervised learning algorithms in Python, including decision trees and linear regression with SGD; achieved &gt; 90% accuracy on synthetic benchmarks and studied overfitting vs. model complexity.</li>
+          <li>Implemented value iteration and reinforcement learning agents (Q-learning, policy gradient) for Gridworld, Pacman, and Atari Pong, analyzing learned behaviors and systematic failure modes.</li>
+        </ul>
+      </div>
+      <div class="work-tags">
+        <span class="tag">PyTorch</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Reinforcement Learning</span>
+      </div>
+      <p class="coming-soon">Deeper case study coming soon</p>
+    </article>
+
+    <article class="work-item">
+      <div class="work-header">
+        <div>
+          <div class="work-role">Autonomous Vehicle Technology Scouting Brief — BMW Group</div>
+          <div class="work-org">Self-directed research</div>
+        </div>
+        <div class="work-date">2026</div>
+      </div>
+      <div class="work-desc">
+        <ul>
+          <li>Authored a 15-slide industry scouting brief surveying <strong>15+ AV operators, AI stacks, and Tier-1 suppliers</strong>; grounded in 30+ primary sources including peer-reviewed VLM studies, peer-reviewed safety studies (Kusano et al. 2025, <em>Traffic Injury Prevention</em>), NHTSA filings, and the UNECE GTR on ADS (Jan 2026).</li>
+          <li>Synthesized that AV competition has shifted from sensor hardware to AI software stacks, recommending BMW evaluate end-to-end AI partners, simulation platforms, and complementary China-market stacks beyond the existing Momenta partnership.</li>
+        </ul>
+      </div>
+      <div class="work-tags">
+        <span class="tag">Industry Research</span>
+        <span class="tag">Strategy</span>
+        <span class="tag">Autonomous Vehicles</span>
+      </div>
+      <p class="coming-soon">Deeper case study coming soon</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="mailto:michelle2004.guo@gmail.com">Email</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="copyYear"></span> Michelle Guo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
