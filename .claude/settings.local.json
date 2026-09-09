@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config *)",
+      "Bash(echo \"postBuffer set to: $\\(git config --global --get http.postBuffer\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git ls-tree *)",
+      "Bash(git push *)"
+    ]
+  }
+}
